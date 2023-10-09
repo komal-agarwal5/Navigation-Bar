@@ -1,0 +1,116 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    /* height: 100%; */
+    /* margin: 0; */
+}
+/* body{ */
+    /* background: url('https://th.bing.com/th/id/OIP.5SjKih2sQZ_ysAcRIOzJhgHaEo?pid=ImgDet&rs=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* height: 100%; */
+    /* margin: 0; */
+/* } */
+/* .bg { */
+    /* The image used */
+    /* background-image: url("https://th.bing.com/th/id/OIP.5SjKih2sQZ_ysAcRIOzJhgHaEo?pid=ImgDet&rs=1"); */
+  
+    /* Full height */
+    /* height: 100%;  */
+  
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* CSS Variables */
+:root{
+    --navbar-height:69px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+/* Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+}
+/* List styling */
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(10, 10, 10);
+   background-color: white;
+
+}
+.btn{
+    margin-left: 380px;
+    border: 2px ;
+    border-radius: 10px;
+    padding: 11px 30px;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+/* HOME */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#home::before{
+    content: "";
+    background: url('https://th.bing.com/th/id/OIP.5SjKih2sQZ_ysAcRIOzJhgHaEo?pid=ImgDet&rs=1') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
